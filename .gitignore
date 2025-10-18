@@ -1,8 +1,4 @@
-.env
-.env.local
-.env.*.local
 service_account.json
 *.pkl
-Pulumi.dev.yaml
 .DS_Store
 *.md

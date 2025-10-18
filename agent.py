@@ -12,7 +12,7 @@ SERVICE_ACCOUNT_FILE = "service_account.json"
 MODEL_SERVICE_URL = "https://8000-i0bfst9t6on99c9vfewou-b0de354a.manus.computer/predict_churn/"
 
 # Placeholder for Google Sheet ID
-GOOGLE_SHEET_ID = "11tlFA84AZnfGJf1UeWBe5jjbF4oGIID4VuqK14qXejs"
+GOOGLE_SHEET_ID = ""
 
 def get_latest_customer_data(sheet_id, num_records=50):
     try:
