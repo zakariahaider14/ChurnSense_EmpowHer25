@@ -1,0 +1,22 @@
+FROM node:22-alpine
+
+WORKDIR /app
+
+# Copy package files
+COPY churn_agent_app/package.json churn_agent_app/pnpm-lock.yaml ./
+
+# Install dependencies
+RUN npm install -g pnpm && pnpm install
+
+# Copy application code
+COPY churn_agent_app/ .
+
+# Build the application
+RUN pnpm build
+
+# Expose port
+EXPOSE 3000
+
+# Start the application
+CMD ["pnpm", "start"]
+

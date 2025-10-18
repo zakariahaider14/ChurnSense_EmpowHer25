@@ -1,0 +1,70 @@
+
+╔════════════════════════════════════════════════════════════════╗
+║         GOOGLE SHEETS UPLOAD INSTRUCTIONS                      ║
+╚════════════════════════════════════════════════════════════════╝
+
+STEP 1: Open Your Google Sheet
+────────────────────────────────
+URL: https://docs.google.com/spreadsheets/d/11tlFA84AZnfGJf1UeWBe5jjbF4oGIID4VuqK14qXejs/edit
+
+STEP 2: Clear Existing Data (if any)
+──────────────────────────────────────
+1. Select all cells (Ctrl+A or Cmd+A)
+2. Press Delete to clear content
+
+STEP 3: Add Column Headers
+──────────────────────────
+1. Click on cell A1
+2. Add these column names in row 1:
+   customerID, gender, SeniorCitizen, Partner, Dependents, tenure, PhoneService, MultipleLines, InternetService, OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport, StreamingTV, StreamingMovies, Contract, PaperlessBilling, PaymentMethod, MonthlyCharges, TotalCharges, Churn
+
+STEP 4: Import Test Data
+──────────────────────────
+Option A (Recommended - Copy/Paste):
+1. Open test_data_for_sheets.csv in a text editor
+2. Copy all content (Ctrl+A, then Ctrl+C)
+3. In Google Sheet, click cell A1
+4. Paste (Ctrl+V or Cmd+V)
+5. Wait for data to load
+
+Option B (Using Google Sheets Import):
+1. In Google Sheet, go to File > Import
+2. Select "Upload" tab
+3. Choose test_data_for_sheets.csv
+4. Select "Replace current sheet"
+5. Click Import
+
+STEP 5: Verify Data
+─────────────────────
+1. Check that all 1,057 rows are imported
+2. Verify all 21 columns are present
+3. Scroll through to verify data looks correct
+4. Check for any errors or missing values
+
+STEP 6: Get Your Sheet ID
+──────────────────────────
+Your Sheet ID: 11tlFA84AZnfGJf1UeWBe5jjbF4oGIID4VuqK14qXejs
+
+STEP 7: Verify Sheet Sharing
+──────────────────────────────
+1. Click Share button (top right)
+2. Make sure your service account has access:
+   Email: churn-sheets-reader@main-aura-237918.iam.gserviceaccount.com
+3. If not, add it with Viewer access
+
+════════════════════════════════════════════════════════════════
+
+DATASET STATISTICS:
+──────────────────
+Total test records: 1,057
+Total columns: 21
+Date prepared: 2025-10-18 16:21:01
+
+NEXT STEPS:
+──────────
+1. Upload test_data_for_sheets.csv to your Google Sheet
+2. Use train_data.csv to train the XGBoost model
+3. Use validation_data.csv to validate the model
+4. Use test_data.csv for final testing
+
+════════════════════════════════════════════════════════════════

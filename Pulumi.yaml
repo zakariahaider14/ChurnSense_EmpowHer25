@@ -1,0 +1,17 @@
+name: churn-agent-app
+runtime: python
+description: Churn Prediction Agent Infrastructure on Google Cloud
+
+config:
+  gcp:project:
+    description: GCP Project ID
+  gcp:region:
+    description: GCP Region
+    default: us-central1
+  app_name:
+    description: Application name
+    default: churn-agent-app
+  environment:
+    description: Environment (dev, staging, prod)
+    default: dev
+
