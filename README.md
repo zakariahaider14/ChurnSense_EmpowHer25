@@ -486,7 +486,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Documentation**: Check the `/docs` folder for detailed guides
 - **Issues**: Open an issue on GitHub for bugs or feature requests
 - **Discussions**: Use GitHub Discussions for questions and ideas
-- **Email**: Contact us at support@empowher25.com
+- **Email**: Contact me at h.zakaria.business@gmail.com
 
 ---
 
